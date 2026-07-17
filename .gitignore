@@ -1,0 +1,29 @@
+# Dependências
+node_modules/
+
+# Build
+dist/
+build/
+*.tsbuildinfo
+
+# Tauri (Rust) — a partir da Etapa 3
+src-tauri/target/
+
+# Variáveis de ambiente
+.env
+.env.*
+!.env.example
+
+# Logs
+*.log
+
+# Testes
+coverage/
+playwright-report/
+test-results/
+
+# Editor / SO
+.vscode/*
+.idea/
+.DS_Store
+Thumbs.db
