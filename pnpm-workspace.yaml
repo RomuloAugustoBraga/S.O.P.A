@@ -3,3 +3,10 @@ packages:
   - "packages/*"
 
 saveExact: true
+
+allowBuilds:
+  "@prisma/engines": true
+  "@prisma/client": true
+  prisma: true
+  esbuild: true
+  argon2: true
