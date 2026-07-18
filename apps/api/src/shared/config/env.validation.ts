@@ -42,7 +42,9 @@ export function validate(config: Record<string, unknown>): EnvironmentVariables 
   const errors = validateSync(validated, { skipMissingProperties: false });
 
   if (errors.length > 0) {
-    const messages = errors.map((err) => Object.values(err.constraints ?? {}).join(', ')).join('; ');
+    const messages = errors
+      .map((err) => Object.values(err.constraints ?? {}).join(', '))
+      .join('; ');
     throw new Error(`Variáveis de ambiente inválidas: ${messages}`);
   }
 

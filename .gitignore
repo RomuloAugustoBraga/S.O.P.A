@@ -27,3 +27,8 @@ test-results/
 .idea/
 .DS_Store
 Thumbs.db
+
+# Prisma generated files
+**/prisma/client/
+**/prisma/seed.js
+**/src/generated/

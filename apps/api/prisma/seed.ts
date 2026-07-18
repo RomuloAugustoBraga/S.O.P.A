@@ -1,7 +1,7 @@
 import 'dotenv/config';
 import { PrismaPg } from '@prisma/adapter-pg';
 import * as argon2 from 'argon2';
-import { PrismaClient } from '../src/generated/prisma/client';
+import { PrismaClient } from './client';
 
 const ARGON2ID_OPTIONS = {
   type: argon2.argon2id,
